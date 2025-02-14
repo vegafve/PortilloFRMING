@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portillo Framing - Trusted Remodeling & Framing Services</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .hero {
+            position: relative;
+            text-align: center;
+            color: white;
+            background: url('construction-bg.jpg') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .hero h1 {
+            font-size: 50px;
+            font-weight: bold;
+            opacity: 0;
+        }
+        .hero p {
+            font-size: 20px;
+            max-width: 600px;
+            opacity: 0;
+        }
+        .quote-box {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            border-radius: 8px;
+            text-align: left;
+            width: 300px;
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .quote-box h2 {
+            color: #f4f4f4;
+        }
+        .quote-box input, .quote-box textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+            border: none;
+        }
+        .quote-box button {
+            background: orange;
+            color: white;
+            padding: 10px;
+            width: 100%;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+        .about {
+            text-align: center;
+            padding: 50px;
+            background: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>Trusted Remodeling & Framing Services</h1>
+        <p>Your vision, our craftsmanship. Let's build something amazing together.</p>
+        <div class="quote-box">
+            <h2>Get a Free Quote!</h2>
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <input type="tel" placeholder="Your Phone Number">
+            <textarea placeholder="Your Message"></textarea>
+            <button>Request a Callback</button>
+        </div>
+    </div>
+    <div class="about">
+        <h2>About Portillo Framing</h2>
+        <p>We provide high-quality remodeling, framing, and painting services to transform your home or business.</p>
+    </div>
+    <script>
+        gsap.to(".hero h1", { duration: 1, opacity: 1, y: -10, ease: "power3.out" });
+        gsap.to(".hero p", { duration: 1.2, opacity: 1, y: -10, delay: 0.3, ease: "power3.out" });
+    </script>
+</body>
+</html>
